@@ -9,4 +9,4 @@ Projeto acadêmico que demonstra um processo de **Sistema de Gerenciamento de Co
 4. **Criação do sistema executável** — gera `target/sgc-construcao.jar`
 5. **Automação de testes** — JUnit 5 + Maven Surefire
 6. **Relatórios** — relatório HTML simples + relatório de testes Surefire
-7. **Geração de documentação** — Javadoc em `docs/api`
+7. **Geração de documentação** — Javadoc em `open target/site/apidocs/index.html`
