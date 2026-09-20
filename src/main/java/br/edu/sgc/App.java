@@ -16,10 +16,10 @@ public class App {
         double custo = calculadora.calcularCusto(100.0, 250.0);
 
         System.out.println("================================");
-        System.out.println(" SGC - Construção");
+        System.out.println(" SGC - Teste - Construção");
         System.out.println("================================");
         System.out.printf("Área da obra: 100 m²%n");
         System.out.printf("Custo estimado: R$ %.2f%n", custo);
-        System.out.println("Sistema executável criado pelo SGC.");
+        System.out.println("Sistema criado pelo SGC.");
     }
 }

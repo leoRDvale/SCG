@@ -1,0 +1,39 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'/Users/leonardvale/Downloads/sgc-construcao/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/leonardvale/Downloads/sgc-construcao/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'SGC - Sistema de Gerenciamento de Construção 1.0.0 API'
+-use
+-version
+-windowtitle
+'SGC - Sistema de Gerenciamento de Construção 1.0.0 API'
+br.edu.sgc
+/Users/leonardvale/Downloads/sgc-construcao/src/main/java = 1789911524499
+/Users/leonardvale/Downloads/sgc-construcao/target/site/apidocs/tag-search-index.js = 1789914456435
+/Users/leonardvale/Downloads/sgc-construcao/target/site/apidocs/overview-tree.html = 1789914456426
+/Users/leonardvale/Downloads/sgc-construcao/target/site/apidocs/module-search-index.js = 1789914456434
+/Users/leonardvale/Downloads/sgc-construcao/target/site/apidocs/index.html = 1789914456441
+/Users/leonardvale/Downloads/sgc-construcao/target/site/apidocs/package-search-index.js = 1789914456434
+/Users/leonardvale/Downloads/sgc-construcao/target/site/apidocs/index-all.html = 1789914456439
+/Users/leonardvale/Downloads/sgc-construcao/target/site/apidocs/allpackages-index.html = 1789914456433
+/Users/leonardvale/Downloads/sgc-construcao/target/site/apidocs/member-search-index.js = 1789914456435
+/Users/leonardvale/Downloads/sgc-construcao/target/site/apidocs/help-doc.html = 1789914456444
+/Users/leonardvale/Downloads/sgc-construcao/target/site/apidocs/element-list = 1789914456411
+/Users/leonardvale/Downloads/sgc-construcao/target/site/apidocs/search.html = 1789914456441
+/Users/leonardvale/Downloads/sgc-construcao/target/site/apidocs/allclasses-index.html = 1789914456432
+/Users/leonardvale/Downloads/sgc-construcao/target/site/apidocs/type-search-index.js = 1789914456435
