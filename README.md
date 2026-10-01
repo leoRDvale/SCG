@@ -15,35 +15,35 @@ Projeto acadêmico que demonstra um processo de **Sistema de Gerenciamento de Co
 <img width="1523" height="462" alt="Captura de Tela 2026-09-20 às 11 33 27" src="https://github.com/user-attachments/assets/9056669d-b9a2-4825-9ebe-807a34bcaaa4" />
 
 
-COMO TESTAR:
-
-Abrir a pasta no terminal
-
-java -version 
-mvn -version 
-git --version 
- 
-chmod +x build.sh 
- 
-git init 
-git add . 
-git commit -m "Versao inicial do SGC" 
- 
-mvn compile 
-mvn compile 
- 
-mvn test 
- 
-mvn package 
- 
-java -jar target/sgc-construcao.jar 
- 
-mvn javadoc:javadoc 
- 
-git tag baseline-1.0 
- 
-./build.sh 
- 
-open reports/build-report.html 
- 
-open docs/api/index.html 
+COMO TESTAR:  
+  
+Abrir a pasta no terminal  
+  
+java -version   
+mvn -version   
+git --version   
+   
+chmod +x build.sh   
+   
+git init   
+git add .   
+git commit -m "Versao inicial do SGC"   
+   
+mvn compile   
+mvn compile   
+   
+mvn test  
+  
+mvn package  
+  
+java -jar target/sgc-construcao.jar  
+  
+mvn javadoc:javadoc  
+  
+git tag baseline-1.0  
+  
+./build.sh  
+  
+open reports/build-report.html  
+  
+open docs/api/index.html  
