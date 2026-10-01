@@ -19,31 +19,31 @@ COMO TESTAR:
 
 Abrir a pasta no terminal
 
-java -version
-mvn -version
-git --version
-
-chmod +x build.sh
-
-git init
-git add .
-git commit -m "Versao inicial do SGC"
-
-mvn compile
-mvn compile
-
-mvn test
-
-mvn package
-
-java -jar target/sgc-construcao.jar
-
-mvn javadoc:javadoc
-
-git tag baseline-1.0
-
-./build.sh
-
-open reports/build-report.html
-
-open docs/api/index.html
+java -version 
+mvn -version 
+git --version 
+ 
+chmod +x build.sh 
+ 
+git init 
+git add . 
+git commit -m "Versao inicial do SGC" 
+ 
+mvn compile 
+mvn compile 
+ 
+mvn test 
+ 
+mvn package 
+ 
+java -jar target/sgc-construcao.jar 
+ 
+mvn javadoc:javadoc 
+ 
+git tag baseline-1.0 
+ 
+./build.sh 
+ 
+open reports/build-report.html 
+ 
+open docs/api/index.html 
