@@ -1,0 +1,6 @@
+target/
+reports/
+docs/api/
+.idea/
+.vscode/
+.DS_Store

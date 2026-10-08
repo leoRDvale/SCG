@@ -1,0 +1,66 @@
+
+name: SGC - Construção, Testes e Documentação
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: ["**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Construir e testar o SGC
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Baixar o código do repositório
+        uses: actions/checkout@v4
+
+      - name: 2. Configurar Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: maven
+
+      - name: 3. Preparar o script de construção
+        run: chmod +x build.sh
+
+      - name: 4. Executar o workflow do SGC
+        run: ./build.sh
+
+      - name: 5. Registrar o resultado no resumo
+        if: always()
+        run: |
+          echo "# SGC - Relatório de execução" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+
+          if [ -f reports/steps.log ]; then
+            echo "## Etapas registradas" >> "$GITHUB_STEP_SUMMARY"
+            cat reports/steps.log >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+          if [ -f reports/test-report.html ]; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "Relatório HTML dos testes gerado." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+          if [ -f docs/api/index.html ]; then
+            echo "Documentação Javadoc gerada." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: 6. Publicar executável, relatórios e documentação
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sgc-resultados
+          path: |
+            target/sgc-construcao.jar
+            reports/
+            docs/api/
+          if-no-files-found: warn
+          retention-days: 14
