@@ -1,61 +1,17 @@
 # SGC — Sistema de Gerenciamento de Construção
 
-Projeto acadêmico demonstrando um processo de construção integrado a Git (SCV), Maven, JUnit e Javadoc.
+Projeto acadêmico que demonstra um processo de **Sistema de Gerenciamento de Construção (SGC)** integrado a um **Sistema de Controle de Versões (SCV)** usando Git.
 
-## Requisitos atendidos
 
-- Geração de script de construção
-- Integração com SCV/Git
-- Re-compilação mínima pelo Maven
-- Criação de sistema executável
-- Automação de testes unitários
-- Relatório visual dos testes
-- Relatório dos steps do workflow
-- Geração de documentação Javadoc dos métodos públicos
+1. **Geração de script de construção** — `build.sh`
+2. **Integração com o SCV** — Git, identificação da branch, commit e linha de base
+3. **Re-compilação mínima** — Maven verifica timestamps e recompila apenas o necessário
+4. **Criação do sistema executável** — gera `target/sgc-construcao.jar`
+5. **Automação de testes** — JUnit 5 + Maven Surefire
+6. **Relatórios** — relatório HTML simples + relatório de testes Surefire
+7. **Geração de documentação** — Javadoc em `open target/site/apidocs/index.html`
 
-## Execução no macOS/Linux
 
-```bash
-chmod +x build.sh
-./build.sh
-```
+  WORKFLOW
 
-Ao final, abra:
-
-```bash
-open reports/test-report.html
-open reports/build-report.html
-open docs/api/index.html
-```
-
-No Windows, execute o projeto pelo Git Bash ou adapte o script.
-
-## Artefatos gerados
-
-```text
-target/sgc-construcao.jar
-reports/test-report.html
-reports/build-report.html
-docs/api/index.html
-```
-
-## Testes
-
-Os testes unitários estão em:
-
-```text
-src/test/java/br/edu/sgc/CalculadoraObraTest.java
-```
-
-O Maven Surefire executa os testes e o Surefire Report gera uma página HTML com:
-
-- quantidade de testes executados;
-- testes aprovados;
-- falhas;
-- erros;
-- testes ignorados;
-- detalhes de cada classe de teste.
-
-## Documentação
-
-O Javadoc é gerado em `docs/api`. A documentação dos métodos públicos contém descrição, parâmetros (`@param`) e retorno (`@return`) quando aplicável.
+<img width="1464" height="740" alt="workflow" src="https://github.com/user-attachments/assets/9c8c929c-6b5b-4b1e-8a88-3945f3aeea52" />
